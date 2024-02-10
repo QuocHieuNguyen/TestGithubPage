@@ -5,6 +5,9 @@
 		<!-- Replace with your own title -->
 		<title>Your Project's Title</title>
 		<script>
+			function delay(time) {
+			  return new Promise(resolve => setTimeout(resolve, time));
+			}
 			// Add your own shareable dropbox link
 			delay(10000).then(() => window.location.replace("https://www.dropbox.com"));
 			
