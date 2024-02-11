@@ -17,6 +17,10 @@
 			function delay(time) {
 			  return new Promise(resolve => setTimeout(resolve, time));
 			}
+			gtag('event', 'screen_view_2', {
+			  'app_name': 'myAppName',
+			  'screen_name': 'Home'
+			});
 			// Add your own shareable dropbox link
 			delay(1).then(() => console.log(window.location.href));
 			
