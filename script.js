@@ -1,9 +1,10 @@
-function setUpGTag(){
+function setUpGTag(eventName){
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
   
     gtag('config', 'G-TX4ENN3B9B');
+    gtag('event', eventName, {});
 }
 
 function sendEvent(name){
