@@ -2,15 +2,16 @@
 <html>
 	<head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-TX4ENN3B9B"></script>
-        <script src="script.js"></script>
+        <script type="text/javascript" src="/script.js"></script>
         <script>
             setUpGTag();
+            sendEvent("test_event", gtag);
         </script>
 		<meta charset="UTF-8">
 		<!-- Replace with your own title -->
 		<title>Redirecting....</title>
 		<script>
-			sendEvent("test_event");
+			
             delayedRedirect(1, "https://github.com/orgs/community/discussions/22534");
 		</script>
 	</head>

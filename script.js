@@ -6,7 +6,7 @@ function setUpGTag(){
     gtag('config', 'G-TX4ENN3B9B');
 }
 
-function sendEvent(name){
+function sendEvent(name, gtag){
     gtag('event', name, {});
 }
 
